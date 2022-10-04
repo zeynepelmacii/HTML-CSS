@@ -1,0 +1,90 @@
+
+body{
+  background-color: #F6F3EE;
+  overflow: hidden;
+}
+
+.vertical {
+  border-left: 4px solid #5E548E;
+  height: 400px;
+  position:absolute;
+}
+
+.horizontal {
+  border-top: 4px solid #5E548E;
+  width: 400px;
+  position: absolute;
+
+}
+
+.options {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  transition-duration: 4s;
+}
+
+.button {
+  background-color: #F6F3EE;
+  border: none;
+  color: #3E2D74;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: myFont;
+  margin-right: 20px;
+}
+
+.button:hover {
+  animation: shakeButton 4s;
+}
+
+.title {
+  padding-top: 250px;
+  text-align: center;
+  font-family: cardo;
+  color: #3E2D74;
+  font-size: 100px;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(now.light.otf);
+}
+
+@font-face {
+    font-family: alegreya;
+    src: url(cardo.ttf);
+}
+
+@keyframes moveTopVertical {
+  0%   {left:50px; top:30px;}
+  50%  {left:50px; top:70px;}
+  100% {left:50px; top:30px;}
+}
+@keyframes moveTopHorizontal {
+  0%   {left:20px; top:60px;}
+  50%  {left:60px; top:60px;}
+  100% {left:20px; top:60px;}
+}
+
+@keyframes moveBottomVertical {
+  0%   {right:50px; bottom:30px;}
+  50%  {right:50px; bottom:70px;}
+  100% {right:50px; bottom:30px;}
+}
+@keyframes moveBottomHorizontal {
+  0%   {right:20px; bottom:60px;}
+  50%  {right:60px; bottom:60px;}
+  100% {right:20px; bottom:60px;}
+}
+
+@keyframes shakeButton {
+  10%   {transform: rotate(5deg); font-weight:bold; }
+  20%   {transform: rotate(5deg); font-weight:bold;}
+  30%   {transform: rotate(5deg); font-weight:bold;}
+  40%   {transform: rotate(5deg); font-weight:bold;}
+}

@@ -1,0 +1,18 @@
+body{
+  background-image: linear-gradient(to  right, #F6F2B9, #FDE4CF,#FFCFD2,#F1C0E8,#CFBAF0,#DCD2FF);
+}
+
+
+.base {
+  border-radius: 25px;
+  background: white;
+  padding: 30px;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
