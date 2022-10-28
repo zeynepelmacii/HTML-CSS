@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+:root{
+    --main-color:#31333E;
+    --text-color:#fff;
+    --bg-color:#1B1D29;
+    --big-font:3.25rem;
+    --h3-font:2rem;
+    --p-font:0.9rem;
+}
+
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    padding-right: 3vw;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 0.5vw;
+}
+
+h1{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    font-family: disneyFont;
+}
+
+.profiles{
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section{
+    text-align: center;
+    margin-right: 2vw;
+}
+
+.img{
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    width: 10.4vw;
+    height: 10.4vw;
+    margin: 1vw;
+    transition: transform .6s;
+}
+
+p{
+    font-size: 2vw;
+    font-family: disneyFont;
+}
+
+.btn:hover{
+    background: #454750;
+}
+
+.img:hover{
+    border: 0.3vw solid white;
+    transform: scale(1.1);
+}
+
+
+@font-face {
+    font-family: disneyFont;
+    src: url('font/disneyFont.otf');
+}
